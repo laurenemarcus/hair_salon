@@ -26,17 +26,17 @@ Run the following commands in `psql` to create the databases:
 Run the following command to install pg:
   `gem install pg`
 
-Run the following command to install bundler:
-  `gem install bundler`
-
-Run the following command to install all required gems:
-  `bundle`
-
 Run the following command to install rspec:
   `gem install rspec`
 
 Run the following command to use rspec:
   `rspec`
+
+Run the following command to install bundler:
+  `gem install bundler`
+
+Run the following command to install all required gems:
+  `bundle`
 
 
 KNOWN BUGS
