@@ -1,6 +1,6 @@
 INTRODUCTION
 ------------
-The Hair Salon allows an owner to add a list of his or her stylists and then the clients for those stylists.
+The Hair Salon allows an owner to add a list of his or her stylists and then add the clients for those stylists.
 
 REQUIREMENTS
 ------------
@@ -10,9 +10,6 @@ postgreSQL 9.4.0
 
 INSTALLATION
 ------------
-Run the following command to install pg:
-  `gem install pg`
-
 Run the following command to start the postgreSQL server:
   `postgres`
 
@@ -22,9 +19,12 @@ Run the following command to access psql:
 Run the following commands in `psql` to create the databases:
   `CREATE DATABASE hair_salon;`
   `\c hair_salon`
-  `CREATE TABLE stylists (id serial PRIMARY KEY, stylist_id name varchar);`
+  `CREATE TABLE stylists (id serial PRIMARY KEY, stylist_name varchar);`
   `CREATE TABLE clients (id serial PRIMARY KEY, client_name varchar, stylist_id int);`
   `CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;`
+
+Run the following command to install pg:
+  `gem install pg`
 
 Run the following command to install bundler:
   `gem install bundler`
