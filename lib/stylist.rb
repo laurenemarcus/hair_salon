@@ -27,6 +27,17 @@ class Stylist
     found_stylist
   end
 
+  define_method(:clients) do
+    stylist_clients = []
+    clients = DB.exec("SELECT * FROM clients WHERE stylist_id = #{self.id()};")
+    clients.each() do |client|
+      client_name = client.fetch("client_name")
+      stylist_id = client.fetch("stylist_id").to_i()
+      stylist_clients.push(Client.new({:client_name => client_name, :stylist_id => stylist_id}))
+    end
+    stylist_clients
+  end
+
   define_method(:save) do
     result = DB.exec("INSERT INTO stylists (stylist_name) VALUES ('#{@stylist_name}') RETURNING id;")
     @id = result.first().fetch("id").to_i()
