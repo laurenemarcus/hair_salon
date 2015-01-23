@@ -1,6 +1,6 @@
 INTRODUCTION
 ------------
-The Hair Salon allows the owner to add a list of his or her stylists and the clients for those stylists.
+The Hair Salon allows an owner to add a list of his or her stylists and then the clients for those stylists.
 
 REQUIREMENTS
 ------------
