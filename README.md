@@ -2,6 +2,7 @@ INTRODUCTION
 ------------
 The Hair Salon allows an owner to add a list of his or her stylists and then add the clients for those stylists.
 
+
 REQUIREMENTS
 ------------
 Ruby v 2.2.0
@@ -38,15 +39,20 @@ Run the following command to install bundler:
 Run the following command to install all required gems:
   `bundle`
 
+Run the following command to start all the Sinatra server:
+  `ruby app.rb`
+
 
 KNOWN BUGS
 ---------
 There are no known bugs at this time.
 
+
 AUTHOR
 -------
 Lauren Marcus
 lauren.e.marcus@gmail.com
+
 
 LICENSE
 -------
